@@ -8,8 +8,7 @@ const vpck = [
   'service', 'auth', 'config', 'middleware', 'utils'
 ];
 
-// Paste your actual token here (get it from Authorization API as explained before)
-const AUTH_TOKEN = 'YOUR_ACCESS_TOKEN_HERE';
+const AUTH_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJzaGgyMmlzZUBjbXJpdC5hYy5pbiIsImV4cCI6MTc1NjA5ODkzMiwiaWF0IjoxNzU2MDk4MDMyLCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiOGI4NThlYTEtMDU3OS00NjBjLTkwZjQtMTk0MmQyOTM4NzE1IiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoiaCBzaHlhbSBzdW5kYXIiLCJzdWIiOiI2OGQ5MTkwZS03YTliLTQ5NzgtYmIyOS1hNWE3YzE0NDJjMjYifSwiZW1haWwiOiJzaGgyMmlzZUBjbXJpdC5hYy5pbiIsIm5hbWUiOiJoIHNoeWFtIHN1bmRhciIsInJvbGxObyI6IjFjcjIyaXMwNTkiLCJhY2Nlc3NDb2RlIjoieVVWUVhLIiwiY2xpZW50SUQiOiI2OGQ5MTkwZS03YTliLTQ5NzgtYmIyOS1hNWE3YzE0NDJjMjYiLCJjbGllbnRTZWNyZXQiOiJUVEhQY2ZBWXFVQUR2blJiIn0.LxqcCL_RP_kuUbaQwh_irGZoY2TB6FUfct-tyDzqEM8';
 
 async function Log(stack, level, pkg, message) {
   if (!vstacks.includes(stack.toLowerCase())) throw new Error("Invalid stack");
